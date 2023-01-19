@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <style>
+            input, .button{
+                margin: 20px;
+                padding: 10px;
+            }
+            body {
+                background: #202124;
+            }
+            #navbar{
+                text-align: right;
+            } 
+            #search_input{
+                width: 500px;
+            }
+            div > a{
+                color: rgb(255, 255, 255);
+                margin-left: 20px;
+            }
+            h1{
+                font-family: helvetica;
+                margin: 15px;
+                margin-top: 25px;
+                color: rgb(168, 54, 54);
+                text-align: left;
+            }
+            h2,p{
+                color: rgb(255, 255, 255);
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html">Search</a>
+            <a href="image_search.html">Image Search</a>
+        </div>
+        <h1>Image Search</h1>
+        <hr>
+        <div id="search">
+            <h2>Find pages with...</h2>            
+            <form action="https://www.google.com/search">
+                <p>
+                    All of these words:
+                    <input id="search_input" type="text" name="as_q" style="margin-left: 100px;"><br>
+                </p>
+                <p>
+                    This exact word or phrase:
+                    <input id="search_input" type="text" name="as_epq" style="margin-left: 42px;"><br>
+                </p>
+                <p>
+                    Any of these words:
+                    <input id="search_input" type="text" name="as_oq" style="margin-left: 90px;"><br>  
+                </p>
+                <p>
+                    None of these words:
+                    <input id="search_input" type="text" name="as_eq" style="margin-left: 80px;"><br>
+                </p>
+                <div>
+                    <button class="button" type="submit" name="q">Advanced Search</button>
+                </div>
+                
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
